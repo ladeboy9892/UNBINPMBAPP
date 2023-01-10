@@ -1,0 +1,143 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar style="background:#a5a5e6;">
+      <ion-title>PMB UNBIN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+    <ion-item>
+    <ion-label (click)="pmbinfo()">Alur PMB</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label (click)="pmbfee()">Alur Pencairan Fee</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label (click)="pmbreg()">Pendaftaran Calon Mahasiswa</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label (click)="pmbstat()">Status Calon Mahasiswa</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label (click)="pmblogout()">Keluar</ion-label>
+  </ion-item>
+</ion-list>
+  <ion-content class="ion-padding"></ion-content>
+</ion-menu>
+
+<ion-content [fullscreen]="true">
+  <div id="headcontainer">
+    <div class="ion-page" id="main-content" style="background: none;">
+      <ion-buttons slot="start" class="btn-sidemenu">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+</div>
+    <img class="parallax-image" src="https://img.freepik.com/free-photo/purple-pink-watercolor-texture-background_1083-169.jpg?1&w=900&t=st=1672916614~exp=1672917214~hmac=cfced7017adafa37ece0835a8d06340790b7b7c2519c447ba6c6a83ddf0b4de0" alt="">
+    <h1 class="h1">Alur Penerimaan Mahasiswa Baru</h1>
+ 
+    <span class="material-symbols-rounded" style="font-size: 35px;color: #f9f9f9;">
+      keyboard_double_arrow_down
+      </span>
+
+  </div><!-- container head-->
+
+  <div id="container" style="min-height: -webkit-fill-available;margin-bottom: -3rem;">
+    <section class="timeline_area section_padding_130">
+  <div class="container">
+      <div class="row" style="padding-left:64px;padding-right:10px;padding-bottom: 80px;">
+          <div class="col-12">
+              <!-- Timeline Area-->
+              <div class="apland-timeline-area">
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                    
+                      <div align="left" class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                          <p><b>Pendaftaran</b></p>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                  <div class="timeline-text" >
+                                      <h6 align="left">Kegiatan pendaftaran dapat dilakukan mulai <b>tanggal 2 januari s/d 31 agustus 2023</b></h6>
+                                      <p align="left">Biaya Pendaftaran sebesar Rp. 300.000,00.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                      <div align="left" class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                          <p align="left"><b>Tes Potensi Akademi dan Wawancara</b></p>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <p align="left"><b>Tes Potensi Akademik (TPA)</b> Kegiatan ini dilakukan untuk mengetahui kompetensi pengetahuan umum dimana ada 3 jenis pertanyaan diantaranya adalah <b>logika, matematika, dan umum, TPA</b> dilakukan menggunakan berbasis komputer yang diselenggarakan offline/online. <b>Wawancara</b> kegiatan ini dilakukan untuk mengetahui minat dan bakat calon mahasiswa</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                      <div align="left" class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                          <p><b>Pengumuman Hasil TPA dan Melakukan Biaya Daftar Ulang</b></p>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                  <div class="timeline-text">
+                                      <h6 align="left">Kegiatan daftar ulang bisa dilakukan secara<b> Online atau Offline</b>.</h6> 
+                                      <p align="left">Setelah ada pengumunan pengenai lolos atau tidaknya terhadap nilai TPA, maka calon mahasiswa yang <b>dinyatakan lolos</b> bisa langsung melakukan kegiatan <b>daftar ulang</b></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                    <div align="left" class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                        <p><b>Melakukan Kegiatan Pra-Studi</b></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                <div class="timeline-text">
+                                    <h6 align="left">Pelaksanaan kegiatan Pra-Studi dilakukan di 1 lokasi.</h6>
+                                    <p align="left">Fakultas Ekonomi dan Komputer dilaksanakan di<b> Gedung Kampus Padjajaran</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Timeline Content-->
+                <div class="single-timeline-area">
+                  <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                  
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                          
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    </section>
+  </div><!-- container timeline-->
+</ion-content>

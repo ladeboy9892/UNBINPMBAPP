@@ -1,0 +1,7 @@
+{
+  "name": "unbinPMBapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

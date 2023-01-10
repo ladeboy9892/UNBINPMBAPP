@@ -1,0 +1,136 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>PMB UNBIN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+      <ion-item>
+      <ion-label (click)="pmbinfo()">Alur PMB</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmbfee()">Alur Pencairan Fee</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmbreg()">Pendaftaran Calon Mahasiswa</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmbstat()">Status Calon Mahasiswa</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmblogout()">Keluar</ion-label>
+    </ion-item>
+  </ion-list>
+  
+  <ion-content class="ion-padding">
+  </ion-content>
+  
+</ion-menu>
+
+<ion-content [fullscreen]="true">
+  <div id="headcontainer">
+    <div class="ion-page" id="main-content" style="background: none;">
+      <ion-buttons slot="start" class="btn-sidemenu">
+        <ion-menu-button></ion-menu-button>
+        <h1 class="h1">Pendaftaran Calon Mahasiswa</h1>
+      </ion-buttons>
+    </div>
+  
+    <img class="parallax-image" src="https://img.freepik.com/free-vector/employees-cv-candidates-resume-corporate-workers-students-id-isolate-flat-design-element-job-applications-avatars-personal-information-concept-illustration_335657-1661.jpg?w=740&t=st=1673220435~exp=1673221035~hmac=87e69f1ff2659f7660245f7af5f7bc2c46dce5fd47425317efc1d8cfc52f959d" alt="" style="padding-top: 1rem;">
+      
+   
+      
+  </div><!-- Div HeadContainer-->
+  <div id="container" style="min-height: -webkit-fill-available;margin-bottom: -8rem;">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Isi Formulir</ion-card-title>
+        <ion-card-subtitle>Data Diri</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item counter="true" id="costum-item" [counterFormatter]="customCounterFormatter">
+          <ion-label position="floating">Nama Lengkap</ion-label>
+          <ion-input maxlength="50" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-radio-group [allowEmptySelection]="true" value="turtles">
+          <ion-card-title align="left" style="margin-left: 15px;
+          font-size: large;">Jenis Kelamin</ion-card-title>
+          <ion-item>
+            <ion-label>Laki-laki</ion-label>
+            <ion-radio slot="end" value="LK"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Perempuan</ion-label>
+            <ion-radio slot="end" value="PW"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
+        <ion-item>
+          <ion-label position="floating">No. Handphone</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" ngModel email></ion-input>
+          <ion-note slot="helper">Enter a valid email</ion-note>
+          <ion-note slot="error">Invalid email</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Asal Sekolah</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Program Studi</ion-label>
+          <ion-select placeholder="Pilih Program Studi">
+            <ion-select-option value="">Kosong</ion-select-option>
+            <ion-select-option value="SI">Sistem Informasi</ion-select-option>
+            <ion-select-option value="TI">Teknik Informatika</ion-select-option>
+            <ion-select-option value="TEKIN">Teknologi Informasi</ion-select-option>
+            <ion-select-option value="MAIN">Manajemen Informatika</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jenjang</ion-label>
+          <ion-select placeholder="Pilih Jenjang">
+            <ion-select-option value="">Kosong</ion-select-option>
+            <ion-select-option value="D3">D3</ion-select-option>
+            <ion-select-option value="S1">S1</ion-select-option>
+            <ion-select-option value="S2">S2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kelas</ion-label>
+          <ion-select placeholder="Pilih Kelas">
+            <ion-select-option value="">Kosong</ion-select-option>
+            <ion-select-option value="A">A</ion-select-option>
+            <ion-select-option value="B">B</ion-select-option>
+            <ion-select-option value="C">C</ion-select-option>
+            <ion-select-option value="D">D</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Info Kampus</ion-label>
+          <ion-select placeholder="Pilih Info Kampus">
+            <ion-select-option value="">Kosong</ion-select-option>
+            <ion-select-option value="DUNBIN">Dosen UNBIN</ion-select-option>
+            <ion-select-option value="MUNBIN">Mahasiswa UNBIN</ion-select-option>
+            <ion-select-option value="MS">Media Social</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-button color="success" class="ion-activatable ripple-parent" >Daftar</ion-button>
+      </ion-card-content>
+      
+    </ion-card>
+    
+  </div>
+  
+</ion-content>

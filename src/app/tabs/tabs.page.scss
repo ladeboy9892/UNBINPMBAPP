@@ -1,0 +1,90 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content{
+    --background:#f4f4f4;
+}
+ion-tabs{
+	ion-fab {
+		margin-bottom: env(safe-area-inset-bottom); /* fix notch ios*/
+		ion-fab-button {
+			--box-shadow: none;
+			
+		}
+        img{
+            max-width: 70%;
+            margin: -10px;
+        }
+	}
+	ion-fab ion-fab-button{
+		--background:#fffaeb;
+	}
+	
+	ion-tab-bar {
+		--border: 0;
+		--background: transparent;
+		position: absolute;
+		bottom: 0;
+		left:0; right: 0;
+		width: 100%;
+		&:after{
+			content: " ";
+			width: 100%;
+			bottom: 0;
+			height: env(safe-area-inset-bottom);
+			position: absolute;
+		}
+		ion-tab-button {
+			--background: #ffffff;
+		}
+		ion-tab-bar ion-tab-button ion-icon ion-label{
+			--background:#fffaeb;
+		}
+		ion-tab-button.comments {
+			margin-right: 0px;
+			border-top-right-radius: 18px;
+		}
+		ion-tab-button.notifs {
+			margin-left: 0px;
+			border-top-left-radius: 18px;
+		}
+		svg {    
+			width: 72px;
+			margin-top: 20px;
+			margin-left: -1px;
+			path{
+				fill:  #ffffff;
+			}		
+		}
+	}
+}
+
+.btn-sidemenu{
+    margin-top: 5px;
+    margin-left: 5px;
+}

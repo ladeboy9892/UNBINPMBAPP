@@ -1,0 +1,108 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>PMB UNBIN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+      <ion-item>
+      <ion-label (click)="pmbinfo()">Alur PMB</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmbfee()">Alur Pencairan Fee</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmbreg()">Pendaftaran Calon Mahasiswa</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmbstat()">Status Calon Mahasiswa</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label (click)="pmblogout()">Keluar</ion-label>
+    </ion-item>
+  </ion-list>
+  
+  <ion-content class="ion-padding">
+  </ion-content>
+  
+</ion-menu>
+
+<ion-content [fullscreen]="true">
+  <div id="headcontainer">
+    <div class="ion-page" id="main-content" style="background: none;">
+      <ion-buttons slot="start" class="btn-sidemenu">
+        <ion-menu-button></ion-menu-button>
+        <h1 class="h1">Status Calon Mahasiswa</h1>
+      </ion-buttons>
+    </div>
+  
+    <img class="parallax-image" src="https://img.freepik.com/free-vector/businessman-with-laptop-target-arrows-business-direction-strategy-turnaround-change-direction-campaign-concept-ultraviolet-background_335657-1676.jpg?w=900&t=st=1673237131~exp=1673237731~hmac=b34e3b2e750a5dbe2aca1ee520e88d75448182b466fea74649406e31e16137d4" alt="" style="padding-top: 3rem;">
+      
+   
+      
+  </div><!-- Div HeadContainer-->
+    
+  <div id="container" style="min-height: -webkit-fill-available;margin-bottom: -3rem;">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Data Calon Mahasiswa Mendaftar</ion-card-title>
+        <ion-toolbar>
+          <ion-searchbar></ion-searchbar>
+        </ion-toolbar>
+      </ion-card-header>
+      <ion-card-content style="overflow: auto;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Reg ID</th>
+              <th scope="col">Password</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Jadwal Tes</th>
+              <th scope="col">Status</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>RG226697</td>
+              <td>o6r8i</td>
+              <td>Edward</td>
+              <td>Test 1 - 2023</td>
+              <td style="color:darkgreen">Menunggu Verifikasi Pendaftaran</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>RG226698</td>
+              <td>o7r6i</td>
+              <td>Billy</td>
+              <td>Test 1 - 2023</td>
+              <td style="color:darkgreen">Menunggu Verifikasi Pendaftaran</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>RG226699</td>
+              <td>o4r9i</td>
+              <td>Arul</td>
+              <td>Test 1 - 2023</td>
+              <td style="color:darkgreen">Menunggu Verifikasi Pendaftaran</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </ion-card-content>
+    </ion-card>
+    
+    
+  </div>
+
+  
+</ion-content>
